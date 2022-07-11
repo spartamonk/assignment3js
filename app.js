@@ -126,6 +126,26 @@ function typeOfData(data) {
 
 // 10. Write a JavaScript function which returns the n rows by n columns identity matrix.
 
+function identityMatrix(num) {
+  let arr = []
+  for (let i = 0; i < num; i++) {
+    arr.push([])
+    for (let j = 0; j < num; j++) {
+      if (i === j) {
+        arr[i][j] = 1
+      } else {
+        arr[i][j] = 0
+      }
+    }
+  }
+  return arr
+}
+// console.log(identityMatrix(2))
+
+
+
+
+
 // 11. Write a JavaScript function which will take an array of numbers stored and find the second
 // lowest and second greatest numbers, respectively.
 // Sample array: [1,2,3,4,5]
@@ -330,6 +350,13 @@ function longestCountryName(countries) {
 
 // 26. Write a JavaScript function to find longest substring in a given a string without repeating
 // characters.
+
+
+
+
+
+
+
 
 // 27. Write a JavaScript function that returns the longest palindrome in a given string.
 // Note: According to Wikipedia "In computer science, the longest palindromic substring or longest
